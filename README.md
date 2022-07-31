@@ -2,7 +2,22 @@
 
 Codex is a single page HTML school management system that involves students information.
 
+# Author
 
+Anthony Kimeu
+
+## Project setup instructions
+This site as of now is already designed with an REST API hosted by Heroku , a front-end hosted by vercel and is available for use through the the github pages link below.Additionally,the repository can be used and configured as desired by cloning it.
+
+
+The repository link to RESTFUL API is https://github.com/Anthony16-Ty/json-server-template
+
+To set up the repository on your local machine:
+
+npm install
+
+
+npm start
 
 
 
