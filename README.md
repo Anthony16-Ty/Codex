@@ -1,4 +1,4 @@
-#Codex
+# Codex
 
 Codex is a single page HTML school management system that involves students information.
 
