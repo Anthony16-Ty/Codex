@@ -10,7 +10,7 @@ Anthony Kimeu
 
 This site as of now is already designed with an REST API hosted by Heroku , a front-end hosted by vercel and is available on the github pages below.Additionally,the repository can be used and configured as desired by cloning it.
 
-The repository link is
+The repository link is https://github.com/Anthony16-Ty/Codex
 
 To set up the repository on your local machine:
 
