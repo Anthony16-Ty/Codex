@@ -32,7 +32,7 @@ Access to internet [Go Back to the top]
 ## Live link
 
 
-furniture-booking.vercel.app
+http://codex-eight.vercel.app/
 
 ## Technologies Used
 
