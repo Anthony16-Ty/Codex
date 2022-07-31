@@ -43,7 +43,7 @@ REACT- Which was used to come up with school's single page application and was u
 ## Support
 
 
-Feel free to reach me incase of bug issues
+Feel free to reach me incase of bugs.
 
 
 
