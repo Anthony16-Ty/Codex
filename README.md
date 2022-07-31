@@ -1,4 +1,4 @@
-Author
+AUTHOR
 
 Anthony Kimeu
 
