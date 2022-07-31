@@ -6,94 +6,77 @@ Codex is a single page HTML school management system that involves students info
 
 Anthony Kimeu
 
-## Project setup instructions
+# Project setup instructions
+
 This site as of now is already designed with an REST API hosted by Heroku , a front-end hosted by vercel and is available for use through the the github pages link below.Additionally,the repository can be used and configured as desired by cloning it.
 
-
-The repository link to RESTFUL API is https://github.com/Anthony16-Ty/json-server-template
+The repository link to RESTFUL API is
 
 To set up the repository on your local machine:
 
 npm install
 
-
 npm start
 
 
+# Application Name
+Furniture-Booking
+
+### By
+Gideon Kipkoech Langat
+
+
+## Table of Content
+Current Version
+Brief description
+Description
+Set up/Installation
+Requirements
+Features
+Live Link
+Technologies Used
+Support
+Licence
+Authors Info
+
+
+## Current Version
+The app is upto date
+
+## Brief description
+Furniture-Booking is an app that allows customers to go through our furniture collections and order for their favorite furniture at their convenience online.
+
+## Description
+Furniture-bboking is an app that allows customers to go through our furniture collections and order for their favorite furniture at the convenience online.A customer orders/ or buy the furniture in our website by clicking the Add To Cart button where by one will be directed to fill all the necessary details.
+
+## Setup/Installation 
+* Clone the repo https://github.com/gideonlangat98/Furniture-Booking
+* Fork and clone this repository to your local environment
+
+## Requirements
+Access to a computer or any other garget
+Access to internet [Go Back to the top]
+
+
+## Live link
+furniture-booking.vercel.app
+
+## Technologies Used
+REACT- Which was used to come up with school's single page application and was used to style the UI interface and make it responsive.
+[Go Back to the top]
+
+## Support
+Feel free to reach me incase of bug issues
+
+## License
+MIT License Copyright (c) [2022] [Gideon Kipkoech Langat] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. [Go Back to the top]
+
+Authors Info
+Name: ANTHONY KIMEU
+Email: anthony.kimeu@student.moringa school.com
+Phone: +254714229987
 
 
 
 
 
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
