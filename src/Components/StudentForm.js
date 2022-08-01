@@ -14,7 +14,7 @@ const validationSchema = Yup.object().shape({
 	.integer("Invalid roll number")
 	.required("Required"),
 });
-console.log(props);
+// console.log(props);
 return (
 	<div className="form-wrapper">
 	<Formik {...props} validationSchema={validationSchema}>
@@ -38,10 +38,10 @@ return (
 			/>
 		</FormGroup>
 		<FormGroup>
-			<Field name="rollno" type="number"
+			<Field name="no" type="number"
 				className="form-control" />
 			<ErrorMessage
-			name="rollno"
+			name="no"
 			className="d-block invalid-feedback"
 			component="span"
 			/>

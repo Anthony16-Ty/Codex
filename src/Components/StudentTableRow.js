@@ -1,32 +1,30 @@
-import React from "react";
-import { Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Alert, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
-const StudentTableRow = (props) => {
-const { _id, name, email, rollno } = props.obj;
+
+const StudentTableRow = ({student, onDelete}) => {
+const { id, no, name, email } = student;
 
 const deleteStudent = () => {
-	axios
-	.delete(
-"https://kimeu-api.herokuapp.com/students" + _id)
-	.then((res) => {
-		if (res.status === 200) {
-		alert("Student successfully deleted");
-		window.location.reload();
-		} else Promise.reject();
+	fetch(`https://kimeu-api.herokuapp.com/students/${id}`,{
+		method: "DELETE",
 	})
-	.catch((err) => alert("Something went wrong"));
-};
+	.then(res => res.json())
+	.then(() => {
+		onDelete(id)
+		alert("Student successfully deleted!")
+	})
+}
 
 return (
 	<tr>
 	<td>{name}</td>
 	<td>{email}</td>
-	<td>{rollno}</td>
+	<td>{no}</td>
 	<td>
 		<Link className="edit-link"
-		to={"/edit-student/" + _id}>
+		to={"/edit-student/" + id}>
 		Edit
 		</Link>
 		<Button onClick={deleteStudent}

@@ -1,37 +1,51 @@
-// CreateStudent Component to add new student
+import React, { useState } from 'react'
 
-// Import Modules
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
-import StudentForm from "./StudentForm";
+function CreateStudent(){
 
-// CreateStudent Component
-const CreateStudent = () => {
-const [formValues, setFormValues] =
-	useState({ name: '', email: '', rollno: '' })
-// onSubmit handler
-const onSubmit = studentObject => {
-	axios.post(
-'https://kimeu-api.herokuapp.com/students',
-	studentObject)
-	.then(res => {
-		if (res.status === 200)
-		alert('Student successfully created')
-		else
-		Promise.reject()
-	})
-	.catch(err => alert('Something went wrong'))
+  const [students, setStudents] = useState([])
+  const [formData, setFormData] = useState({
+    name: "", email: "", no: "",
+  });
+
+  function handleChange(e){
+    setFormData({...formData, [e.target.name]: e.target.value})
+  }
+
+  function onAddStudent(newStudent){
+    setStudents([...students, newStudent])
+  }
+
+  function handleSubmit(e){
+    e.preventDefault();
+    fetch("https://kimeu-api.herokuapp.com/students", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+		no: formData.no
+      })})
+
+      .then ((response) => response.json())
+      .then((data) => {
+        onAddStudent(data)
+        setFormData({...formData, name: "", email: "", no: ""})
+		alert("Student successfully created")
+      })
+    
+  }
+  
+  return (
+    <form onSubmit={handleSubmit} className="form">
+      <input onChange={handleChange} value={formData.name} name="name" placeholder="name" required/>
+      <input onChange={handleChange} value={formData.email} name="email" placeholder="email" required/>
+	  <input onChange={handleChange} value={formData.no} name="no" placeholder="no" required />
+      <button>Submit</button>
+     
+    </form>
+  )
 }
-	
-// Return student form
-return(
-	<StudentForm initialValues={formValues}
-	onSubmit={onSubmit}
-	enableReinitialize>
-	Create Student
-	</StudentForm>
-)
-}
 
-// Export CreateStudent Component
-export default CreateStudent
+export default CreateStudent;

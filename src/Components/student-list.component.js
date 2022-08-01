@@ -3,8 +3,11 @@ import axios from "axios";
 import { Table } from "react-bootstrap";
 import StudentTableRow from "./StudentTableRow";
 
+
 const StudentList = () => {
 const [students, setStudents] = useState([]);
+
+
 
 useEffect(() => {
 	axios
@@ -17,9 +20,14 @@ useEffect(() => {
 	});
 }, []);
 
+const handleDelete = (id) =>{
+	const newStudentList = students.filter((student ) => student.id !== id)
+	setStudents (newStudentList)
+}
+
 const DataTable = () => {
-	return students.map((res, i) => {
-	return <StudentTableRow obj={res} key={i} />;
+	return students.map((student) => {
+	return <StudentTableRow student={student} onDelete = {handleDelete} key={student.id} />;
 	});
 };
 
@@ -36,6 +44,7 @@ return (
 		</thead>
 		<tbody>{DataTable()}</tbody>
 	</Table>
+	
 	</div>
 );
 };
