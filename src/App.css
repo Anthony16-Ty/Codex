@@ -1,3 +1,11 @@
+.App{
+  background: #d4ded6;
+  padding-bottom: 10rem;
+  
+}
+
+
+
 .wrapper {
   padding-top: 30px;
   }
@@ -50,3 +58,16 @@
   -moz-appearance: textfield;
   }
   
+  .nav-link{
+    background: rgb(116, 107, 107);
+  }
+
+  .footer{
+    background: rgb(119, 113, 113);
+    border: solid;
+    margin-top: 40rem;
+    margin-bottom: 3rem;
+    padding: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }

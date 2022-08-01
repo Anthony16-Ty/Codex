@@ -23,10 +23,10 @@ return (
 	<td>{email}</td>
 	<td>{no}</td>
 	<td>
-		<Link className="edit-link"
+		{/* <Link className="edit-link"
 		to={"/edit-student/" + id}>
 		Edit
-		</Link>
+		</Link> */}
 		<Button onClick={deleteStudent}
 		size="sm" variant="danger">
 		Delete

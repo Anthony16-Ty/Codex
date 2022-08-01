@@ -38,7 +38,7 @@ return (
 		<tr>
 			<th>Name</th>
 			<th>Email</th>
-			<th>Roll No</th>
+			<th> No</th>
 			<th>Action</th>
 		</tr>
 		</thead>

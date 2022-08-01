@@ -15,11 +15,12 @@ import { BrowserRouter as Router, Switch,
 
 // Import other React Component
 import CreateStudent from
-	"./Components/create-student.component";
-import EditStudent from
-	"./Components/edit-student.component";
+	"./Components/CreateStudent";
+
 import StudentList from
-	"./Components/student-list.component";
+	"./Components/StudentList";
+
+import About from "./About";
 
 
 
@@ -52,6 +53,13 @@ return (
 					Student List
 				</Link>
 				</Nav>
+
+				<Nav>
+				<Link to={"/about"}
+					className="nav-link">
+					About
+				</Link>
+				</Nav>
 			</Nav>
 			</Container>
 		</Navbar>
@@ -66,10 +74,12 @@ return (
 					component={CreateStudent} />
 				<Route path="/create-student"
 					component={CreateStudent} />
-				<Route path="/edit-student/:id"
-					component={EditStudent} />
+				
 				<Route path="/student-list"
 					component={StudentList} />
+
+				<Route path="/about"
+				    component={About} />
 				</Switch>
 			</div>
 			</Col>

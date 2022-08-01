@@ -38,13 +38,20 @@ function CreateStudent(){
   }
   
   return (
-    <form onSubmit={handleSubmit} className="form">
+    <div className='create-student'>
+      <form onSubmit={handleSubmit} className="form">
       <input onChange={handleChange} value={formData.name} name="name" placeholder="name" required/>
       <input onChange={handleChange} value={formData.email} name="email" placeholder="email" required/>
-	  <input onChange={handleChange} value={formData.no} name="no" placeholder="no" required />
+	    <input onChange={handleChange} value={formData.no} name="no" placeholder="no" required />
       <button>Submit</button>
      
     </form>
+
+    <div className='footer'>
+      <p>This is my footer</p>
+    </div>
+    </div>
+    
   )
 }
 
