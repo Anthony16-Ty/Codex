@@ -13,8 +13,8 @@ function About()
                </div>
                <div className='col-12 col-md-6 mt-5 mt-md-0'>
                  <h2 className='mb-0'>CODEX</h2>
-                 <h1 style={{fontWeight:900}}>We care about providing students information</h1>
-                 <p style={{fontWeight: 300}}>Best learning management system.</p>
+                 <h1 style={{fontWeight:1000}}>Codex is the real deal</h1>
+                 <p style={{fontWeight: 600}}>A reliable learning management system that can be used by schools to get and create a variety of student information.</p>
                 </div>
                </div>
            </div>

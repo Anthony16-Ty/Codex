@@ -47,9 +47,7 @@ function CreateStudent(){
      
     </form>
 
-    <div className='footer'>
-      <p>This is my footer</p>
-    </div>
+   
     </div>
     
   )
